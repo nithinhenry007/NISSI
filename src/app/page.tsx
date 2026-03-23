@@ -25,14 +25,14 @@ export default function Home() {
         {/* Text container with glassmorphism for legibility */}
         <motion.div
           style={{ y: yText, opacity: opacityText }}
-          className="absolute z-20 top-[20%] md:top-[20%] lg:top-[24%] left-6 md:left-12 lg:left-24 flex flex-col items-start text-left px-6 md:px-0 max-w-xl md:max-w-2xl lg:max-w-3xl"
+          className="absolute z-20 top-[12%] sm:top-[15%] md:top-[20%] lg:top-[24%] left-4 right-4 md:left-12 lg:left-24 md:right-auto flex flex-col items-start text-left max-w-[calc(100%-2rem)] md:max-w-2xl lg:max-w-3xl w-full md:w-auto mx-auto md:mx-0"
         >
-          <div className="bg-white/40 backdrop-blur-md p-8 md:p-12 rounded-[2.5rem] border border-white/40 shadow-xl shadow-sky-900/5">
+          <div className="bg-white/40 backdrop-blur-md p-6 sm:p-8 md:p-12 rounded-[2rem] md:rounded-[2.5rem] border border-white/40 shadow-xl shadow-sky-900/5 w-full">
             <motion.h1
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="text-4xl md:text-5xl lg:text-6xl font-sans font-bold text-slate-900 tracking-tight leading-tight mb-8 drop-shadow-sm"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-sans font-bold text-slate-900 tracking-tight leading-tight mb-6 md:mb-8 drop-shadow-sm"
             >
               Built to survive<br />
               20 Indian monsoons.
@@ -41,7 +41,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-              className="text-slate-800 text-lg md:text-2xl font-medium leading-relaxed mb-10 max-w-2xl"
+              className="text-slate-800 text-base sm:text-lg md:text-2xl font-medium leading-relaxed mb-8 md:mb-10 max-w-2xl"
             >
               Without a single maintenance call. Specialized doors, bed frames, and planters for commercial properties — built to perform for 20 years without warping or rusting.
             </motion.p>
@@ -49,7 +49,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-              className="flex flex-col sm:flex-row gap-4 items-center sm:items-start w-full sm:w-auto"
+              className="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center w-full sm:w-auto"
             >
               <Link href="/products" className="bg-[#0EA5E9] hover:bg-[#0284C7] text-white px-8 py-4 rounded-full text-[15px] font-bold transition-all flex items-center justify-center gap-3 shadow-lg shadow-sky-100 hover:-translate-y-1 group">
                 Explore Products

@@ -29,15 +29,15 @@ export default function Navigation() {
 
     return (
         <header className="fixed top-0 left-0 w-full p-4 md:p-6 z-50 flex justify-center pointer-events-none">
-            <div className="bg-[#F8F9FA] rounded-xl px-6 py-3 flex items-center justify-between w-full max-w-[1400px] shadow-sm border border-slate-100 pointer-events-auto">
+            <div className="bg-[#F8F9FA] rounded-xl px-4 md:px-6 py-3 flex items-center justify-between w-full max-w-[1400px] shadow-sm border border-slate-100 pointer-events-auto">
                 {/* Left: Logo */}
-                <Link href="/" className="flex items-center flex-1">
+                <Link href="/" className="flex items-center md:flex-1 shrink-0">
                     <Image
                         src="/134 34.svg"
                         alt="Nissi FRP Logo"
                         width={180}
                         height={60}
-                        className="object-contain"
+                        className="object-contain w-[130px] sm:w-[150px] md:w-[180px] h-auto"
                     />
                 </Link>
 
